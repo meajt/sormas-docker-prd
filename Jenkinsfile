@@ -1,4 +1,4 @@
-node {
+pipeline {
 
     stage('SCM checkout'){
         git branch: 'np_change',   url: 'https://github.com/meajt/SORMAS-Project.git'
