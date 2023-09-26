@@ -1,7 +1,8 @@
 pipeline {
     stages{
-    stage('SCM checkout'){
+    stage('SCM checkout'){steps{
         git branch: 'np_change',   url: 'https://github.com/meajt/SORMAS-Project.git'
+    }
     }
     stage('Compile-Package'){
 
