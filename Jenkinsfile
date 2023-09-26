@@ -1,10 +1,10 @@
 node {
 
     stage('SCM checkout'){
-        git branch: 'devops',   url: 'https://github.com/meajt/sormas-docker-prd.git'
+        git branch: 'np_change',   url: 'https://github.com/meajt/SORMAS-Project.git'
     }
     stage('Compile-Package'){
-        sh 'mvn clean install'
+        sh 'mvn clean -DskipTests=true install'
     }
         
 }
