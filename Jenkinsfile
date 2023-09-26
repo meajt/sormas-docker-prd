@@ -7,7 +7,7 @@ node {
                     def gitRepoUrl = 'https://github.com/meajt/sormas-docker-prd.git'
                     
                     // Checkout code from the 'np_change' branch
-                    checkout([$class: 'GitSCM', branches: [[name: 'np_change']], userRemoteConfigs: [[url: gitRepoUrl]]])
+                    checkout([$class: 'GitSCM', branches: [[name: 'devops']], userRemoteConfigs: [[url: gitRepoUrl]]])
                 }
 
 		}
